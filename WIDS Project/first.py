@@ -22,8 +22,8 @@ import cv2
 
 from distutils.dir_util import copy_tree
 import shutil
-copy_tree("./CarND-LaneLines-P1/test_images", "./test_images")
-copy_tree("./CarND-LaneLines-P1/test_videos", "./test_videos")
+copy_tree("./CarND-LaneLines-P1/Input Images", "./Input Image")
+copy_tree("./CarND-LaneLines-P1/Input Videos", "./Input Video")
 shutil.rmtree('./CarND-LaneLines-P1', ignore_errors=False, onerror=None)
 
 import matplotlib.pyplot as plt
@@ -31,7 +31,7 @@ import matplotlib.image as mpimg
 import numpy as np
 
 # Read in the image
-image = mpimg.imread('test_images/solidWhiteRight.jpg')
+image = mpimg.imread('Input Images/Input Image.png')
 
 # Grab the x and y size and make a copy of the image
 ysize = image.shape[0]
@@ -67,7 +67,7 @@ plt.show()
 
 
 # Read in the image
-image = mpimg.imread('test_images/solidWhiteRight.jpg')
+image = mpimg.imread('Input Images/Input Image.png')
 
 # Grab the x and y size and make a copy of the image
 ysize = image.shape[0]
@@ -131,7 +131,7 @@ plt.show()
 
 
 # Read in the image
-image = mpimg.imread('test_images/solidYellowLeft.jpg')
+image = mpimg.imread('Input Images/Input Image solid yellow left.png')
 
 # Grab the x and y size and make a copy of the image
 ysize = image.shape[0]
